@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Memory Match</string>
+    <string name="game_title_text">Welcome to Memory Match!</string>
+    <string name="game_subtitle_text">A memory training game.</string>
+    <string name="button_play">Start Game!</string>
+    <string name="number_of_moves_text">Number Of Moves: %1$d</string>
+    <string name="win_text">Congratulations! You Won!</string>
+    <string name="win_moves_text">You won in %1$d moves!</string>
+    <string name="play_again_button">Play Again!</string>
+    <string name="loading_text">Loading…</string>
+</resources>

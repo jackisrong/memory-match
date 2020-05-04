@@ -70,7 +70,8 @@ public class GameScreenActivity extends AppCompatActivity {
             buttonImages[buttonTwoIndex] = MainActivity.images.get(imageIndex);
         }
 
-        // Display number of moves as 0
+        // Display number of pairs and moves as 0
+        ((TextView) findViewById(R.id.pairsCounter)).setText(getString(R.string.number_of_pairs_text, 0));
         ((TextView) findViewById(R.id.movesCounter)).setText(getString(R.string.number_of_moves_text, 0));
     }
 
@@ -102,6 +103,7 @@ public class GameScreenActivity extends AppCompatActivity {
                 findViewById(v.getId()).setBackgroundColor(Color.GREEN);
                 findViewById(v.getId()).setClickable(false);
                 numberOfPairsFound++;
+                ((TextView) findViewById(R.id.pairsCounter)).setText(getString(R.string.number_of_pairs_text, numberOfPairsFound));
             }
 
             // Wait half a second to display cards before continuing
